@@ -2,9 +2,9 @@
     <mat-expansion-panel-header>
         <mat-panel-title> CATEGORIES </mat-panel-title>
     </mat-expansion-panel-header>
-    <mat-selection-list [multiple]="false">
-        <mat-list-option *ngFor="let category of categories" value="category">
-            <button (click)="onShowCategory(category)">{{category}}</button>
-        </mat-list-option>
-    </mat-selection-list>
+    <div>
+        <div *ngFor="let category of categories" class="mb-2">
+            <button class="text-lg" mat-button (click)="onShowCategory(category)">{{category}}</button>
+        </div>
+    </div>
 </mat-expansion-panel>
